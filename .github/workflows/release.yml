@@ -71,6 +71,9 @@ jobs:
           CARGO_TARGET_DIR: target-aarch64-unknown-linux-gnu
 
       - name: Stage binary
+        # Windows runners default to PowerShell; force bash so the
+        # same `[[ ... ]]` / `mkdir -p` script works on every OS.
+        shell: bash
         run: |
           mkdir -p dist
           if [[ "${{ matrix.target }}" == "aarch64-unknown-linux-gnu" ]]; then
