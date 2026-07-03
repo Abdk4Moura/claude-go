@@ -1,0 +1,31 @@
+claude-go  /  provider                                                                                                                       1  .  2  .  3
+
+──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+ >>    OpenCode Go             [anthropic]  https://opencode.ai/zen/go
+       Anthropic direct        [anthropic]  https://api.anthropic.com
+       OpenRouter              [anthropic]  https://openrouter.ai/api/v1
+    !  Cloudflare AI Gateway   [anthropic]  https://gateway.ai.cloudflare.com/v1
+    !  Google Vertex (Claude)  [anthropic]  https://aiplatform.googleapis.com
+    !  AWS Bedrock (Claude)    [anthropic]  https://bedrock-runtime.us-east-1.amazonaws.com
+       Custom URL...           [anthropic]  ...
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+j/k or arrows  move     Enter  select     a  add custom     d  remove custom     Tab  next screen     q  quit
+
