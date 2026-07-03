@@ -57,7 +57,7 @@ claude-go off
 
 `claude-go` writes the right `ANTHROPIC_*` env vars into
 `~/.claude/settings.json` so Claude Code routes to a different model. It
-owns a small, well-defined slice of that file (10 env keys + a marker)
+owns a small, well-defined slice of that file (9 env keys: 8 owned + a marker)
 and touches nothing else -- your other env vars, permissions, theme,
 plugins, MCP servers, and hooks stay put.
 
@@ -101,7 +101,7 @@ Claude Code
 ```
 
 `~/.claude/settings.json` is the only thing Claude Code reads. `claude-go`
-writes a 10-key env block with an `__claude_go_owned: "1"` marker so
+writes a 9-key env block with an `__claude_go_owned: "1"` marker so
 `off` only strips its own keys and never destroys a user's own
 `ANTHROPIC_*` setup.
 
@@ -150,7 +150,7 @@ can be removed from the TUI with `d`.
 
 | Path | What |
 |------|------|
-| `~/.claude/settings.json` | Claude Code's settings (claude-go owns a 10-key env block) |
+| `~/.claude/settings.json` | Claude Code's settings (claude-go owns a 9-key env block) |
 | `~/.local/share/claude-go/` | State dir (marker file only; no per-proxy files) |
 | `~/.config/claude-go/providers.json` | Custom provider registry |
 | `~/.local/bin/claude-go` | Default install path |
